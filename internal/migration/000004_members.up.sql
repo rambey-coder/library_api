@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS members (
+    id SERIAL PRIMARY KEY,
+    first_name VARCHAR NOT NULL,
+    last_name VARCHAR NOT NULL,
+    email VARCHAR UNIQUE NOT NULL,
+    phone VARCHAR,
+    address TEXT,
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    removed_at TIMESTAMPTZ
+);

@@ -1,0 +1,13 @@
+# Environment & secrets
+.env
+.env.*
+
+# Build / live-reload artifacts
+tmp/
+library_api
+*.exe
+*.out
+*.test
+
+# OS files
+.DS_Store
